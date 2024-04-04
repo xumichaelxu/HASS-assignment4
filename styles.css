@@ -1,61 +1,78 @@
-h1 {
-    text-align: right;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  h1 {
+    text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 50px;
+    font-size: 20px;
     color: #dad4c8;
-    margin-right: 40px;
-    margin-top: 75px;
-    font-size-adjust: 100%;
+    margin: 10px 20px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #dad4c8;
+    margin: 10px 20px 0;
   }
   
   body {
     background-color: #000000;
-    margin: 0;
-    padding: 0;
   }
   
-  .animated {
-    transition: transform 0.6s;
+  .final {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #dad4c8;
   }
   
-  .highlighted {
-    stroke-width: 0.5px;
-    stroke: #dad4c8;
-    filter: drop-shadow(0 0 5px #2e3e24);
+  svg {
+    display: block;
+    margin: 0 auto; /* Adjust margin as needed */
   }
   
   .tooltip {
     position: absolute;
     display: none;
     background-color: white;
-    padding: 5px;
+    padding: 3px;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 3px;
     font-family: "Roboto", sans-serif;
   }
-  
-  svg {
-    background-color: #000000;
-  }
-  
-  .final {
-    text-align: right;
-    margin-right: 40px;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Roboto", sans-serif;
-    color: #dad4c8;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  
+  .tooltip.active {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+#legend {
+    position: absolute;
+    top: 20px; /* Adjust top margin as needed */
+    left: 50%; /* Position in the middle */
+    transform: translateX(-50%); /* Center horizontally */
+    max-width: 300px; /* Limit the legend width */
+    max-height: 80px; /* Limit the legend height */
+    overflow-y: auto; /* Add vertical scrollbar if necessary */
+}
+
+
   /* Additional Roboto font styles */
   .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
   }
-  
-  /* Define other Roboto font styles as needed */
   
